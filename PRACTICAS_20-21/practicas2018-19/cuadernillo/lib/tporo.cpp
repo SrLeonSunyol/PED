@@ -13,7 +13,7 @@ TPoro::TPoro (int x, int y, double volumen) {
 
 TPoro::TPoro (int x, int y, double volumen, const char *color) {
     CopiaParametros (x, y, volumen);
-    CopiaColor(color);
+     (color);
 }
 
 TPoro::TPoro (const TPoro &poro) {
