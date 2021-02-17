@@ -1,0 +1,1539 @@
+g++ -g   -c -Iinclude -o lib/tabbporo.o lib/tabbporo.cpp
+g++ -g   -Iinclude src/tporo/tad01.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad01
+g++ -g   -Iinclude src/tporo/tad02.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad02
+g++ -g   -Iinclude src/tporo/tad03.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad03
+g++ -g   -Iinclude src/tporo/tad04.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad04
+g++ -g   -Iinclude src/tporo/tad05.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad05
+g++ -g   -Iinclude src/tporo/tad06.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad06
+g++ -g   -Iinclude src/tporo/tad07.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad07
+g++ -g   -Iinclude src/tporo/tad08.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad08
+g++ -g   -Iinclude src/tporo/tad09.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad09
+g++ -g   -Iinclude src/tporo/tad10.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad10
+g++ -g   -Iinclude src/tporo/tad11.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad11
+g++ -g   -Iinclude src/tporo/tad12.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad12
+g++ -g   -Iinclude src/tporo/tad13.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad13
+g++ -g   -Iinclude src/tporo/tad14.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad14
+g++ -g   -Iinclude src/tporo/tad15.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad15
+g++ -g   -Iinclude src/tporo/tad16.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad16
+g++ -g   -Iinclude src/tporo/tad17.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad17
+g++ -g   -Iinclude src/tporo/tad18.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad18
+g++ -g   -Iinclude src/tporo/tad19.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad19
+g++ -g   -Iinclude src/tporo/tad20.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad20
+g++ -g   -Iinclude src/tporo/tad21.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad21
+g++ -g   -Iinclude src/tporo/tad22.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tporo/tad22
+==========================================
+||             TEST#1                  ||
+==========================================
+==========VALGRIND TAD==============
+No hace nada
+==========DIFF==============
+Binary files src/tporo/tad01.cpp.sal and Salida/tporo/./tad01 differ
+==========================================
+||             TEST#2                  ||
+==========================================
+==========VALGRIND TAD==============
+()
+==========DIFF==============
+Binary files src/tporo/tad02.cpp.sal and Salida/tporo/./tad02 differ
+==========================================
+||             TEST#3                  ||
+==========================================
+==========VALGRIND TAD==============
+(1, 2) 3.00 rojo
+==========DIFF==============
+Binary files src/tporo/tad03.cpp.sal and Salida/tporo/./tad03 differ
+==========================================
+||             TEST#4                  ||
+==========================================
+==========VALGRIND TAD==============
+(10, 20) 0.00 -
+==========DIFF==============
+Binary files src/tporo/tad04.cpp.sal and Salida/tporo/./tad04 differ
+==========================================
+||             TEST#5                  ||
+==========================================
+==========VALGRIND TAD==============
+(1, 2) 3.00 rojo
+(1, 2) 3.00 rojo
+==========DIFF==============
+Binary files src/tporo/tad05.cpp.sal and Salida/tporo/./tad05 differ
+==========================================
+||             TEST#6                  ||
+==========================================
+==========VALGRIND TAD==============
+PosicionX: 1
+PosicionY: 2
+Volumen: 3
+==========DIFF==============
+Binary files src/tporo/tad06.cpp.sal and Salida/tporo/./tad06 differ
+==========================================
+||             TEST#7                  ||
+==========================================
+==========VALGRIND TAD==============
+SI
+SI
+==========DIFF==============
+Binary files src/tporo/tad07.cpp.sal and Salida/tporo/./tad07 differ
+==========================================
+||             TEST#8                  ||
+==========================================
+==========VALGRIND TAD==============
+VACIO
+NO VACIO
+==========DIFF==============
+Binary files src/tporo/tad08.cpp.sal and Salida/tporo/./tad08 differ
+==========================================
+||             TEST#9                  ||
+==========================================
+==========VALGRIND TAD==============
+VACIO
+NO VACIO
+VACIO
+==========DIFF==============
+Binary files src/tporo/tad09.cpp.sal and Salida/tporo/./tad09 differ
+==========================================
+||             TEST#10                ||
+==========================================
+==========VALGRIND TAD==============
+VACIO
+VACIO
+VACIO
+VACIO
+==========DIFF==============
+Binary files src/tporo/tad10.cpp.sal and Salida/tporo/./tad10 differ
+==========================================
+           test de correccion
+==========================================
+==========================================
+||             TEST#11                  ||
+==========================================
+==========VALGRIND TAD==============
+()
+()
+()
+()
+==========DIFF==============
+Binary files src/tporo/tad11.cpp.sal and Salida/tporo/./tad11 differ
+==========================================
+||             TEST#12                  ||
+==========================================
+==========VALGRIND TAD==============
+(2, 2) 20.00 -
+(2, 2) 20.00 -
+==========DIFF==============
+Binary files src/tporo/tad12.cpp.sal and Salida/tporo/./tad12 differ
+==========================================
+||             TEST#13                  ||
+==========================================
+==========VALGRIND TAD==============
+IGUALES
+==========DIFF==============
+Binary files src/tporo/tad13.cpp.sal and Salida/tporo/./tad13 differ
+==========================================
+||             TEST#14                  ||
+==========================================
+==========VALGRIND TAD==============
+IGUALES
+IGUALES
+==========DIFF==============
+Binary files src/tporo/tad14.cpp.sal and Salida/tporo/./tad14 differ
+==========================================
+||             TEST#15                  ||
+==========================================
+==========VALGRIND TAD==============
+IGUALES
+==========DIFF==============
+Binary files src/tporo/tad15.cpp.sal and Salida/tporo/./tad15 differ
+==========================================
+||             TEST#16                  ||
+==========================================
+==========VALGRIND TAD==============
+IGUALES
+==========DIFF==============
+Binary files src/tporo/tad16.cpp.sal and Salida/tporo/./tad16 differ
+==========================================
+||             TEST#17                  ||
+==========================================
+==========VALGRIND TAD==============
+PosicionX: -10
+PosicionY: -20
+Volumen: 3
+(-10, -20) 3.00 -
+==========DIFF==============
+Binary files src/tporo/tad17.cpp.sal and Salida/tporo/./tad17 differ
+==========================================
+||             TEST#18                  ||
+==========================================
+==========VALGRIND TAD==============
+VACIO
+VACIO
+VACIO
+VACIO
+VACIO
+==========DIFF==============
+Binary files src/tporo/tad18.cpp.sal and Salida/tporo/./tad18 differ
+==========================================
+||             TEST#19                  ||
+==========================================
+==========VALGRIND TAD==============
+()
+()
+==========DIFF==============
+Binary files src/tporo/tad19.cpp.sal and Salida/tporo/./tad19 differ
+==========================================
+||             TEST#20                  ||
+==========================================
+==========VALGRIND TAD==============
+IGUALES
+IGUALES
+==========DIFF==============
+Binary files src/tporo/tad20.cpp.sal and Salida/tporo/./tad20 differ
+==========================================
+||             TEST#21                  ||
+==========================================
+==========VALGRIND TAD==============
+(2, 2) 20.00 -
+(2, 2) 20.00 -
+(2, 2) 20.00 -
+==========DIFF==============
+Binary files src/tporo/tad21.cpp.sal and Salida/tporo/./tad21 differ
+==========================================
+||             TEST#22                  ||
+==========================================
+==========VALGRIND TAD==============
+verde
+==========DIFF==============
+Binary files src/tporo/tad22.cpp.sal and Salida/tporo/./tad22 differ
+g++ -g   -Iinclude src/tvectorporo/tad01.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad01
+g++ -g   -Iinclude src/tvectorporo/tad02.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad02
+g++ -g   -Iinclude src/tvectorporo/tad03.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad03
+g++ -g   -Iinclude src/tvectorporo/tad04.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad04
+g++ -g   -Iinclude src/tvectorporo/tad05.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad05
+g++ -g   -Iinclude src/tvectorporo/tad06.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad06
+g++ -g   -Iinclude src/tvectorporo/tad07.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad07
+g++ -g   -Iinclude src/tvectorporo/tad08.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad08
+g++ -g   -Iinclude src/tvectorporo/tad09.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad09
+g++ -g   -Iinclude src/tvectorporo/tad10.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad10
+g++ -g   -Iinclude src/tvectorporo/tad11.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad11
+g++ -g   -Iinclude src/tvectorporo/tad12.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad12
+g++ -g   -Iinclude src/tvectorporo/tad13.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad13
+g++ -g   -Iinclude src/tvectorporo/tad14.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad14
+g++ -g   -Iinclude src/tvectorporo/tad15.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad15
+g++ -g   -Iinclude src/tvectorporo/tad16.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad16
+g++ -g   -Iinclude src/tvectorporo/tad17.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad17
+g++ -g   -Iinclude src/tvectorporo/tad18.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad18
+g++ -g   -Iinclude src/tvectorporo/tad19.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad19
+g++ -g   -Iinclude src/tvectorporo/tad20.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad20
+g++ -g   -Iinclude src/tvectorporo/tad21.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad21
+g++ -g   -Iinclude src/tvectorporo/tad22.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tvectorporo/tad22
+==========================================
+||             TEST#1                  ||
+==========================================
+==========VALGRIND TAD==============
+No hace nada
+==========DIFF==============
+Binary files src/tvectorporo/tad01.cpp.sal and Salida/tvectorporo/./tad01 differ
+==========================================
+||             TEST#2                  ||
+==========================================
+==========VALGRIND TAD==============
+0
+5
+10
+==========DIFF==============
+Binary files src/tvectorporo/tad02.cpp.sal and Salida/tvectorporo/./tad02 differ
+==========================================
+||             TEST#3                  ||
+==========================================
+==========VALGRIND TAD==============
+[]
+==========DIFF==============
+Binary files src/tvectorporo/tad03.cpp.sal and Salida/tvectorporo/./tad03 differ
+==========================================
+||             TEST#4                  ||
+==========================================
+==========VALGRIND TAD==============
+NO
+==========DIFF==============
+Binary files src/tvectorporo/tad04.cpp.sal and Salida/tvectorporo/./tad04 differ
+==========================================
+||             TEST#5                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 (1, 2) 3.00 rojo 2 (1, 2) 3.00 rojo 3 (1, 2) 3.00 rojo 4 (1, 2) 3.00 rojo 5 (1, 2) 3.00 rojo 6 (1, 2) 3.00 rojo 7 (1, 2) 3.00 rojo 8 (1, 2) 3.00 rojo 9 (1, 2) 3.00 rojo 10 (1, 2) 3.00 rojo]
+==========DIFF==============
+Binary files src/tvectorporo/tad05.cpp.sal and Salida/tvectorporo/./tad05 differ
+==========================================
+||             TEST#6                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 (1, 2) 3.00 rojo 2 (1, 2) 3.00 rojo 3 (1, 2) 3.00 rojo 4 (1, 2) 3.00 rojo 5 (1, 2) 3.00 rojo]
+[1 (1, 2) 3.00 rojo 2 (1, 2) 3.00 rojo 3 (1, 2) 3.00 rojo 4 (1, 2) 3.00 rojo 5 (1, 2) 3.00 rojo]
+==========DIFF==============
+Binary files src/tvectorporo/tad06.cpp.sal and Salida/tvectorporo/./tad06 differ
+==========================================
+||             TEST#7                  ||
+==========================================
+==========VALGRIND TAD==============
+Cantidad: 0
+Cantidad: 1
+Cantidad: 2
+Cantidad: 3
+Cantidad: 4
+Cantidad: 5
+==========DIFF==============
+Binary files src/tvectorporo/tad07.cpp.sal and Salida/tvectorporo/./tad07 differ
+==========================================
+||             TEST#8                  ||
+==========================================
+==========VALGRIND TAD==============
+Longitud: 5
+Longitud: 0
+Longitud: 5
+Longitud: 5
+==========DIFF==============
+Binary files src/tvectorporo/tad08.cpp.sal and Salida/tvectorporo/./tad08 differ
+==========================================
+||             TEST#9                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 (10, 10) 2.55 blanco 2 () 3 (10, 10) 2.55 blanco 4 () 5 ()]
+==========DIFF==============
+Binary files src/tvectorporo/tad09.cpp.sal and Salida/tvectorporo/./tad09 differ
+==========================================
+||             TEST#10                  ||
+==========================================
+==========VALGRIND TAD==============
+Cantidad:4
+Longitud:5
+[1 (10, 10) 2.55 blanco 2 () 3 (10, 10) 2.55 blanco 4 (3, 4) 2.23 - 5 (10, 10) 2.55 blanco]
+==========DIFF==============
+Binary files src/tvectorporo/tad10.cpp.sal and Salida/tvectorporo/./tad10 differ
+==========================================
+||             TEST#11                  ||
+==========================================
+==========VALGRIND TAD==============
+CORRECTO
+==========DIFF==============
+Binary files src/tvectorporo/tad11.cpp.sal and Salida/tvectorporo/./tad11 differ
+==========================================
+||             TEST#12                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 ()]
+[]
+[1 () 2 () 3 ()]
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (3, 4) 2.23 -]
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (3, 4) 2.23 -]
+==========DIFF==============
+Binary files src/tvectorporo/tad12.cpp.sal and Salida/tvectorporo/./tad12 differ
+==========================================
+||             TEST#13                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 ()]
+[]
+[1 () 2 () 3 ()]
+CORRECTO
+==========DIFF==============
+Binary files src/tvectorporo/tad13.cpp.sal and Salida/tvectorporo/./tad13 differ
+==========================================
+||             TEST#14                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 ()]
+[]
+[1 () 2 () 3 () 4 () 5 ()]
+CORRECTO
+CORRECTO
+==========DIFF==============
+Binary files src/tvectorporo/tad14.cpp.sal and Salida/tvectorporo/./tad14 differ
+==========================================
+||             TEST#15                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 ()]
+[]
+[1 () 2 () 3 () 4 () 5 ()]
+CORRECTO
+[1 (3, 4) 2.23 - 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 () 5 ()]
+[]
+[1 (3, 4) 2.23 - 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 () 5 ()]
+==========DIFF==============
+Binary files src/tvectorporo/tad15.cpp.sal and Salida/tvectorporo/./tad15 differ
+==========================================
+||             TEST#16                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 ()]
+[]
+[1 () 2 () 3 () 4 () 5 ()]
+CORRECTO
+INCORRECTO
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (3, 4) 2.23 -]
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (3, 4) 2.23 -]
+[]
+==========DIFF==============
+Binary files src/tvectorporo/tad16.cpp.sal and Salida/tvectorporo/./tad16 differ
+==========================================
+||             TEST#17                  ||
+==========================================
+==========VALGRIND TAD==============
+CORRECTO
+==========DIFF==============
+Binary files src/tvectorporo/tad17.cpp.sal and Salida/tvectorporo/./tad17 differ
+==========================================
+||             TEST#18                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 () 2 () 3 () 4 () 5 ()]
+[1 () 2 () 3 () 4 () 5 ()]
+==========DIFF==============
+Binary files src/tvectorporo/tad18.cpp.sal and Salida/tvectorporo/./tad18 differ
+==========================================
+||             TEST#19                  ||
+==========================================
+==========VALGRIND TAD==============
+[]
+[]
+==========DIFF==============
+Binary files src/tvectorporo/tad19.cpp.sal and Salida/tvectorporo/./tad19 differ
+==========================================
+||             TEST#20                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 (10, 10) 2.55 blanco 2 () 3 (10, 10) 2.55 blanco 4 () 5 ()]
+==========DIFF==============
+Binary files src/tvectorporo/tad20.cpp.sal and Salida/tvectorporo/./tad20 differ
+==========================================
+||             TEST#21                  ||
+==========================================
+==========VALGRIND TAD==============
+0
+0
+BIEN ==> 1: 
+[1 (10, 10) 2.55 blanco]
+BIEN ==> 2: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco]
+BIEN ==> 3: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco]
+BIEN ==> 4: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco]
+BIEN ==> 5: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco]
+BIEN ==> 6: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco 6 (10, 10) 2.55 blanco]
+BIEN ==> 7: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco 6 (10, 10) 2.55 blanco 7 (10, 10) 2.55 azul]
+---
+ ahora para abajo .. para abajo... 
+---
+MAL ==> 7: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco 6 (10, 10) 2.55 blanco 7 (10, 10) 2.55 azul]
+BIEN ==> 6: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco 6 (10, 10) 2.55 blanco]
+BIEN ==> 5: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco 5 (10, 10) 2.55 blanco]
+BIEN ==> 4: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco 4 (10, 10) 2.55 blanco]
+BIEN ==> 3: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco 3 (10, 10) 2.55 blanco]
+BIEN ==> 2: 
+[1 (10, 10) 2.55 blanco 2 (10, 10) 2.55 blanco]
+BIEN ==> 1: 
+[1 (10, 10) 2.55 blanco]
+==========DIFF==============
+Binary files src/tvectorporo/tad21.cpp.sal and Salida/tvectorporo/./tad21 differ
+==========================================
+||             TEST#22                  ||
+==========================================
+==========VALGRIND TAD==============
+()
+()
+[1 (0, 3) 3.00 poya 2 () 3 () 4 () 5 ()]
+[1 (0, 3) 3.00 poya 2 (2, 2) 2.00 putij 3 (3, 3) 3.00 putij 4 (4, 4) 4.00 putij 5 (5, 5) 5.00 putij]
+[1 (0, 3) 3.00 poya 2 (2, 2) 2.00 putij 3 (3, 3) 3.00 putij]
+[1 (0, 3) 3.00 poya 2 (2, 2) 2.00 putij 3 (3, 3) 3.00 putij 4 () 5 () 6 () 7 () 8 () 9 () 10 ()]
+==========DIFF==============
+Binary files src/tvectorporo/tad22.cpp.sal and Salida/tvectorporo/./tad22 differ
+# g++ -g   -Iinclude src/tlistaporo/tad01.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad01
+# g++ -g   -Iinclude src/tlistaporo/tad02.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad02
+# g++ -g   -Iinclude src/tlistaporo/tad03.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad03
+# g++ -g   -Iinclude src/tlistaporo/tad04.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad04
+# g++ -g   -Iinclude src/tlistaporo/tad05.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad05
+# g++ -g   -Iinclude src/tlistaporo/tad06.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad06
+# g++ -g   -Iinclude src/tlistaporo/tad07.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad07
+# g++ -g   -Iinclude src/tlistaporo/tad08.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad08
+# g++ -g   -Iinclude src/tlistaporo/tad09.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad09
+# g++ -g   -Iinclude src/tlistaporo/tad10.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad10
+# g++ -g   -Iinclude src/tlistaporo/tad11.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad11
+# g++ -g   -Iinclude src/tlistaporo/tad12.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad12
+# g++ -g   -Iinclude src/tlistaporo/tad13.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad13
+# g++ -g   -Iinclude src/tlistaporo/tad14.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad14
+# g++ -g   -Iinclude src/tlistaporo/tad15.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad15
+# g++ -g   -Iinclude src/tlistaporo/tad16.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad16
+# g++ -g   -Iinclude src/tlistaporo/tad17.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad17
+g++ -g   -Iinclude src/tlistaporo/tad18.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tlistaporo/tad18
+==========================================
+||             TEST#18                  ||
+==========================================
+==========VALGRIND TAD==============
+==========DIFF==============
+Binary files src/tlistaporo/tad18.cpp.sal and Salida/tlistaporo/./tad18 differ
+g++ -g   -Iinclude src/tabbporo/TABBPoro-01.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro01
+g++ -g   -Iinclude src/tabbporo/TABBPoro-02.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro02
+g++ -g   -Iinclude src/tabbporo/TABBPoro-03.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro03
+g++ -g   -Iinclude src/tabbporo/TABBPoro-04.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro04
+g++ -g   -Iinclude src/tabbporo/TABBPoro-05.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro05
+g++ -g   -Iinclude src/tabbporo/TABBPoro-06.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro06
+g++ -g   -Iinclude src/tabbporo/TABBPoro-07.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro07
+g++ -g   -Iinclude src/tabbporo/TABBPoro-08.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro08
+g++ -g   -Iinclude src/tabbporo/TABBPoro-09.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro09
+g++ -g   -Iinclude src/tabbporo/TABBPoro-10.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro10
+g++ -g   -Iinclude src/tabbporo/TABBPoro-11.cpp lib/tporo.o lib/tvectorporo.o lib/tlistaporo.o lib/tabbporo.o -o Salida/tabbporo/TABBPoro11
+==========================================
+||             TEST#1                  ||
+==========================================
+==========VALGRIND TAD==============
+CORRECTO CONSTRUCTOR DE COPIA
+CORRECTA ASIGNACION
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-01.cpp.sal and Salida/tabbporo/./TABBPoro01 differ
+==========================================
+||             TEST#2                  ||
+==========================================
+==========VALGRIND TAD==============
+[1 ()]
+[]
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-02.cpp.sal and Salida/tabbporo/./TABBPoro02 differ
+==========================================
+||             TEST#3                  ||
+==========================================
+==========VALGRIND TAD==============
+VACIO
+NO VACIO
+INCORRECTO Borrar()
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-03.cpp.sal and Salida/tabbporo/./TABBPoro03 differ
+==========================================
+||             TEST#4                  ||
+==========================================
+==========VALGRIND TAD==============
+Insertado
+Error INSERCION
+Error NO BORRADO
+No borrado
+Insertado
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-04.cpp.sal and Salida/tabbporo/./TABBPoro04 differ
+==========================================
+||             TEST#5                  ||
+==========================================
+==========VALGRIND TAD==============
+CORRECTA INSERCION MULTIPLE
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-05.cpp.sal and Salida/tabbporo/./TABBPoro05 differ
+==========================================
+||             TEST#6                  ||
+==========================================
+==========VALGRIND TAD==============
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+CORRECTA INSERCION MULTIPLE
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-06.cpp.sal and Salida/tabbporo/./TABBPoro06 differ
+==========================================
+||             TEST#7                  ||
+==========================================
+==========VALGRIND TAD==============
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+[1 () 2 () 3 () 4 () 5 () 6 () 7 ()]
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+[1 () 2 () 3 () 4 () 5 () 6 () 7 ()]
+==========DIFF==============
+==========================================
+||             TEST#8                  ||
+==========================================
+==========VALGRIND TAD==============
+Error NO BORRADO
+Error NO BORRADO
+[1 () 2 () 3 () 4 () 5 () 6 () 7 ()]
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-08.cpp.sal and Salida/tabbporo/./TABBPoro08 differ
+==========================================
+||             TEST#9                  ||
+==========================================
+==========VALGRIND TAD==============
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+Error NO BORRADO
+[1 () 2 () 3 () 4 () 5 () 6 () 7 ()]
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-09.cpp.sal and Salida/tabbporo/./TABBPoro09 differ
+==========================================
+||             TEST#10                  ||
+==========================================
+==========VALGRIND TAD==============
+Encontrado = 0
+Insertado = 1
+Encontrado = 0
+Encontrado = 0
+Insertado = 1
+Borrado = 0
+Encontrado = 0
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-10.cpp.sal and Salida/tabbporo/./TABBPoro10 differ
+==========================================
+||             TEST#11                  ||
+==========================================
+==========VALGRIND TAD==============
+Altura: 0
+Nodos: 0
+NodosHoja: 0
+Raiz: ()
+Altura: 1
+Nodos: 1
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+Altura: 2
+Nodos: 2
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+Altura: 3
+Nodos: 3
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+Altura: 3
+Nodos: 4
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+Altura: 3
+Nodos: 4
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+Altura: 3
+Nodos: 5
+NodosHoja: 0
+Raiz: (1, 2) 100.00 rojo
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Altura: 4
+Nodos: 10
+NodosHoja: 0
+Raiz: (1, 2) 25.00 azul
+==========DIFF==============
+Binary files src/tabbporo/TABBPoro-11.cpp.sal and Salida/tabbporo/./TABBPoro11 differ

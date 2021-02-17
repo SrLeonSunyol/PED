@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+#include "tporo.h"
+
+int
+main(void)
+{
+  TPoro a;
+
+  if(a.EsVacio())
+    cout << "VACIO" << endl;
+  else
+    cout << "NO VACIO" << endl;
+
+  //cout << a << endl;
+  a.Color("rojo");
+
+  if(a.EsVacio())
+    cout << "VACIO" << endl;
+  else
+    cout << "NO VACIO" << endl;
+
+  a.~TPoro();
+
+  if(a.EsVacio())
+    cout << "VACIO" << endl;
+  else
+    cout << "NO VACIO" << endl;
+}

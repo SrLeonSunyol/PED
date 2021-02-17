@@ -1,0 +1,1 @@
+sudo tar -czvf 51238532Y.tgz ./include ./lib ./src makefile nombres.txt .
