@@ -6,45 +6,53 @@
 
 using namespace std;
 
-class TCalendario {
-  friend ostream & operator << (ostream &, const TCalendario &);
-  private:
-    /* data */
-    int dia, mes, anyo;
-    char *mensaje;
+class TCalendario
+{
+  friend ostream &operator<<(ostream &, const TCalendario &);
 
-    void CopiaParametros(int, int, int);
-    void CopiaMensaje(const char *);
+private:
+  /* data */
+  int dia, mes, anyo;
+  char *mensaje;
 
-  public:
-    TCalendario();
-    TCalendario(int, int, int, const char *);
-    TCalendario(const TCalendario &);
-    ~TCalendario();  
-    TCalendario & operator = (const TCalendario &);
+  void CopiaParametros(int, int, int);
+  void CopiaMensaje(const char *);
 
-    TCalendario & operator + (const int);
-    TCalendario & operator - (const int);
-    TCalendario & operator ++ (const int);
-    TCalendario & operator ++ ();
-    TCalendario operator -- (int);
-    TCalendario & operator -- ();
+public:
+  TCalendario();
+  TCalendario(int, int, int, const char *);
+  TCalendario(const TCalendario &);
+  ~TCalendario();
+  TCalendario &operator=(const TCalendario &);
 
-    bool operator == (const TCalendario &) const;
-    bool operator != (const TCalendario &) const;
+  TCalendario &operator+(const int);
+  TCalendario &operator-(const int);
+  TCalendario &operator++(const int);
+  TCalendario &operator++();
+  TCalendario operator--(int);
+  TCalendario &operator--();
 
-    bool ModFecha(int, int, int);
-    bool ModMensaje (const char *);
+  bool operator==(const TCalendario &) const;
+  bool operator!=(const TCalendario &) const;
 
-    bool operator > (const TCalendario &);
-    bool operator < (const TCalendario &); 
+  bool ModFecha(int, int, int);
+  bool ModMensaje(const char *);
 
+bool operator>(const TCalendario &);
+  bool operator<(const TCalendario &);
 
-    bool EsVacio() const;
-    int Dia() { return this -> dia; };
-    int Mes() { return this -> mes; };
-    int Anyo() { return this -> anyo; };
-    char * Mensaje() { return this -> mensaje; };
+  bool EsVacio() const;
+  int Dia() { return this->dia; };
+  int Mes() { return this->mes; };
+  int Anyo() { return this->anyo; };
+  char *Mensaje() { return this->mensaje; };
+  bool const EsFechaCorrecta(int dia, int mes, int anyo);
+  const bool EsBisiesto(int anyo);
+  const bool Es31Mes(int mes)
+  {
+    return mes == 1 || mes == 3 || mes == 5 ||
+           mes == 7 || mes == 8 || mes == 10 || mes == 12;
+  }
 };
 
 #endif
