@@ -75,11 +75,10 @@ TCalendario &TCalendario::operator++()
   return (*this);
 }
 
-TCalendario TCalendario::operator++(const int dia) const
+TCalendario TCalendario::operator++(int dia)
 {
-  TCalendario t((*this));
-  t.SumaDia();
-  return t;
+  SumaDia();
+  return (*this);
 }
 
 TCalendario TCalendario::operator--(const int dia) const
@@ -150,7 +149,7 @@ void TCalendario::SumaDia()
       {
         if (dias_aux >= 31)
         {
-          mes++;
+          mes = 1;
           dia = 1;
           anyo++;
         }

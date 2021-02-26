@@ -35,7 +35,7 @@ public:
   TCalendario operator+(const int);
   TCalendario operator-(const int) const;
   TCalendario &operator++();
-  TCalendario operator++(const int)const;
+  TCalendario operator++(int);
   TCalendario &operator--();
   TCalendario operator--(const int) const;
 
