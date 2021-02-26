@@ -18,6 +18,7 @@ private:
   void CopiaParametros(int, int, int);
   void CopiaMensaje(const char *);
   void SumaDia();
+  void RestaDia();
   const bool EsBisiesto(int anyo);
   const bool Es31Mes(int mes)
   {
@@ -33,11 +34,11 @@ public:
   TCalendario &operator=(const TCalendario &);
 
   TCalendario operator+(const int);
-  TCalendario operator-(const int) const;
+  TCalendario operator-(const int);
   TCalendario &operator++();
   TCalendario operator++(int);
   TCalendario &operator--();
-  TCalendario operator--(const int) const;
+  TCalendario operator--(int);
 
   bool operator==(const TCalendario &) const;
   bool operator!=(const TCalendario &) const;

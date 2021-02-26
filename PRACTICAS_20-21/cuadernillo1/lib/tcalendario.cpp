@@ -59,34 +59,46 @@ TCalendario &TCalendario::operator=(const TCalendario &c)
   return (*this);
 }
 
-TCalendario TCalendario::operator+(const int dias)
+TCalendario TCalendario::operator+(const int dia)
 {
   TCalendario t((*this));
+  t.SumaDia();
   return t;
 }
 
-TCalendario TCalendario::operator-(const int dias) const
+TCalendario TCalendario::operator-(const int dia)
 {
+  TCalendario t(*this);
+  t.RestaDia();
+  return t;
 }
 
+//Pre
 TCalendario &TCalendario::operator++()
 {
-  SumaDia();
+  *this = *this + 1;
   return (*this);
 }
 
+//Post
 TCalendario TCalendario::operator++(int dia)
 {
-  SumaDia();
-  return (*this);
+  TCalendario t(*this);
+  *this = *this + 1;
+  return t;
 }
 
-TCalendario TCalendario::operator--(const int dia) const
+TCalendario TCalendario::operator--(int dia)
 {
+  TCalendario t(*this);
+  *this = *this - 1;
+  return t;
 }
 
 TCalendario &TCalendario::operator--()
 {
+  *this = *this - 1;
+  return (*this);
 }
 
 ostream &operator<<(ostream &os, const TCalendario &c)
@@ -114,13 +126,12 @@ ostream &operator<<(ostream &os, const TCalendario &c)
 
 void TCalendario::SumaDia()
 {
-  int dias_aux = dia + 1;
   if (mes == 2)
   {
     if (EsBisiesto(anyo))
     {
       //29 dias
-      if (dias_aux >= 29)
+      if (dia == 29)
       {
         mes++;
         dia = 1;
@@ -131,7 +142,7 @@ void TCalendario::SumaDia()
     else
     {
       //28 dias
-      if (dias_aux >= 28)
+      if (dia == 28)
       {
         mes++;
         dia = 1;
@@ -147,7 +158,7 @@ void TCalendario::SumaDia()
       //31dias
       if (mes == 12)
       {
-        if (dias_aux >= 31)
+        if (dia == 31)
         {
           mes = 1;
           dia = 1;
@@ -158,7 +169,7 @@ void TCalendario::SumaDia()
       }
       else
       {
-        if (dias_aux > 31)
+        if (dia == 31)
         {
           mes++;
           dia = 1;
@@ -170,13 +181,89 @@ void TCalendario::SumaDia()
     else
     {
       //30dias
-      if (dias_aux > 30)
+      if (dia == 30)
       {
         mes++;
         dia = 1;
       }
       else
         dia++;
+    }
+  }
+}
+
+void TCalendario::RestaDia()
+{
+  if (mes == 3)
+  {
+    if (EsBisiesto(anyo))
+    {
+      if (dia == 1)
+      {
+        mes--;
+        dia = 29;
+      }
+      else
+      {
+        dia--;
+      }
+    }
+    else
+    {
+      if (dia == 1)
+      {
+        mes--;
+        dia = 28;
+      }
+      else
+        dia--;
+    }
+  }
+  else if (mes == 1)
+  {
+    if (dia == 1)
+    {
+      mes = 12;
+      dia = 31;
+      anyo--;
+    }
+    else
+      dia--;
+  }
+  else
+  {
+    if (Es31Mes(mes))
+    {
+      if (mes == 8)
+      {
+        if (dia == 1)
+        {
+          dia == 31;
+          mes--;
+        }
+        else
+          dia--;
+      }
+      else
+      {
+        if (dia == 1)
+        {
+          dia = 30;
+          mes--;
+        }
+        else
+          dia--;
+      }
+    }
+    else
+    {
+      if (dia == 1)
+      {
+        mes--;
+        dia = 31;
+      }
+      else
+        dia--;
     }
   }
 }
