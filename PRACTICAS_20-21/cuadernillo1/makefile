@@ -38,4 +38,4 @@ doc:
 	doxygen
 
 clean:
-	rm -f $(OBJ) && rm Salida/tcalendario/* 
+	rm -f $(OBJ) && rm -r Salida/tcalendario/* 

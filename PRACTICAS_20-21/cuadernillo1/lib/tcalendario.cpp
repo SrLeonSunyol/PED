@@ -62,7 +62,6 @@ TCalendario &TCalendario::operator=(const TCalendario &c)
 TCalendario TCalendario::operator+(const int dias)
 {
   TCalendario t((*this));
-  t.SumaDias(dias);
   return t;
 }
 
@@ -70,15 +69,20 @@ TCalendario TCalendario::operator-(const int dias) const
 {
 }
 
-TCalendario &TCalendario::operator++(const int dias)
-{
-}
-
 TCalendario &TCalendario::operator++()
 {
+  SumaDia();
+  return (*this);
 }
 
-TCalendario TCalendario::operator--(const int dias) const
+TCalendario TCalendario::operator++(const int dia) const
+{
+  TCalendario t((*this));
+  t.SumaDia();
+  return t;
+}
+
+TCalendario TCalendario::operator--(const int dia) const
 {
 }
 
@@ -109,92 +113,72 @@ ostream &operator<<(ostream &os, const TCalendario &c)
 
 #pragma region Auxiliares
 
-void TCalendario::SumaDias(const int dias)
+void TCalendario::SumaDia()
 {
-  int dias_aux = this->dia + dias;
-  int mes_aux = 1;
-
-  if (this->mes == 2)
+  int dias_aux = dia + 1;
+  if (mes == 2)
   {
-    if (EsBisiesto(this->anyo))
+    if (EsBisiesto(anyo))
     {
-      if (dias_aux > 29)
+      //29 dias
+      if (dias_aux >= 29)
       {
-        mes_aux = dias_aux / 29;
-        this->mes++;
-        this->dia = dias_aux % 29;
+        mes++;
+        dia = 1;
       }
       else
-        this->dia = dias_aux;
+        dia++;
     }
     else
     {
-      if (dias_aux > 28)
+      //28 dias
+      if (dias_aux >= 28)
       {
-        this->mes++;
-        this->dia = dias_aux % 28;
+        mes++;
+        dia = 1;
       }
       else
-        this->dia = dias_aux;
+        dia++;
     }
   }
   else
   {
-    if (Es31Mes(this->mes))
+    if (Es31Mes(mes))
     {
-      if (this->mes == 12)
+      //31dias
+      if (mes == 12)
       {
-        if (dias_aux > 31)
+        if (dias_aux >= 31)
         {
-          this->mes++;
-          this->anyo++;
-          this->dia = dias_aux % 31;
+          mes++;
+          dia = 1;
+          anyo++;
         }
         else
-          this->dia = dias_aux;
+          dia++;
       }
       else
       {
         if (dias_aux > 31)
         {
-          this->mes++;
-          this->dia = dias_aux % 31;
+          mes++;
+          dia = 1;
         }
         else
-          this->dia = dias_aux;
+          dia++;
       }
     }
     else
     {
+      //30dias
       if (dias_aux > 30)
       {
-        this->mes++;
-        this->dia = dias_aux % 30;
+        mes++;
+        dia = 1;
       }
       else
-        this->dia = dias_aux;
+        dia++;
     }
-  }
-}
-
-void TCalendario::CheckDiasMesAnyo(int dias, int max)
-{
-  if ((this->dia) + dias > max)
-  {
-    if (this->mes == 12)
-    {
-      this->anyo++;
-      this->mes = 1;
-    }
-    else
-    {
-      this->mes++;
-    }
-    this->dia = (this->dia) + dias % max;
-  }
-  else
-  {
-    this->dia += dias;
   }
 }
 
