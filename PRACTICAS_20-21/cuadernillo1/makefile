@@ -12,7 +12,7 @@ tcalendario:    src//tcalendario/*.cpp $(OBJ)
 	$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad01.cpp $(OBJ) -o Salida/tcalendario/tad01
 	$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad02.cpp $(OBJ) -o Salida/tcalendario/tad02
 	$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad03.cpp $(OBJ) -o Salida/tcalendario/tad03
-	#$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad04.cpp $(OBJ) -o Salida/tcalendario/tad04
+	$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad04.cpp $(OBJ) -o Salida/tcalendario/tad04
 	#$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad05.cpp $(OBJ) -o Salida/tcalendario/tad05
 	#$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad06.cpp $(OBJ) -o Salida/tcalendario/tad06
 	#$(CC) $(OPTIONS) $(DEBUG) -I$(INCLUDEDIR) src/tcalendario/tad07.cpp $(OBJ) -o Salida/tcalendario/tad07

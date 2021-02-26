@@ -17,6 +17,14 @@ private:
 
   void CopiaParametros(int, int, int);
   void CopiaMensaje(const char *);
+  void SumaDias(int dias);
+  void CheckDiasMesAnyo(int ,int);
+  const bool EsBisiesto(int anyo);
+  const bool Es31Mes(int mes)
+  {
+    return mes == 1 || mes == 3 || mes == 5 ||
+           mes == 7 || mes == 8 || mes == 10 || mes == 12;
+  }
 
 public:
   TCalendario();
@@ -25,11 +33,11 @@ public:
   ~TCalendario();
   TCalendario &operator=(const TCalendario &);
 
-  TCalendario &operator+(const int);
-  TCalendario &operator-(const int);
+  TCalendario operator+(const int);
+  TCalendario operator-(const int) const;
   TCalendario &operator++(const int);
   TCalendario &operator++();
-  TCalendario operator--(int);
+  TCalendario operator--(const int) const;
   TCalendario &operator--();
 
   bool operator==(const TCalendario &) const;
@@ -38,7 +46,7 @@ public:
   bool ModFecha(int, int, int);
   bool ModMensaje(const char *);
 
-bool operator>(const TCalendario &);
+  bool operator>(const TCalendario &);
   bool operator<(const TCalendario &);
 
   bool EsVacio() const;
@@ -47,12 +55,6 @@ bool operator>(const TCalendario &);
   int Anyo() { return this->anyo; };
   char *Mensaje() { return this->mensaje; };
   bool const EsFechaCorrecta(int dia, int mes, int anyo);
-  const bool EsBisiesto(int anyo);
-  const bool Es31Mes(int mes)
-  {
-    return mes == 1 || mes == 3 || mes == 5 ||
-           mes == 7 || mes == 8 || mes == 10 || mes == 12;
-  }
 };
 
 #endif
