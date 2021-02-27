@@ -313,22 +313,24 @@ bool const TCalendario::EsBisiesto(int anyo)
 
 bool const TCalendario::EsFechaCorrecta(int dia, int mes, int anyo)
 {
-  return (mes >= 1 && mes <= 12)
-             ? (dia >= 1)
-                   ? (mes == 2)
-                         ? (EsBisiesto(anyo))
-                               ? (dia <= 29)
+  return (anyo >= 1900)
+             ? (mes >= 1 && mes <= 12)
+                   ? (dia >= 1)
+                         ? (mes == 2)
+                               ? (EsBisiesto(anyo))
+                                     ? (dia <= 29)
+                                           ? true
+                                           : false
+                                 : (dia <= 28)
                                      ? true
                                      : false
-                           : (dia <= 28)
+                           : (Es31Mes(mes))
+                               ? (dia <= 31)
+                                     ? true
+                                     : false
+                           : (dia <= 30)
                                ? true
                                : false
-                     : (Es31Mes(mes))
-                         ? (dia <= 31)
-                               ? true
-                               : false
-                     : (dia <= 30)
-                         ? true
                          : false
                    : false
              : false;

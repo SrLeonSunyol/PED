@@ -40,4 +40,13 @@ int main(void)
     cout << d << endl;
     cout << --d << endl;
     cout << --d << endl;
+
+    TCalendario e(1012, 12, 19900, "");
+    cout << --e << endl;
+
+    //Se debria de llamar al constructor por defecto
+    //Y deberia de tener un EsFechaCorrecta()
+    TCalendario f(1, 1, 1900, "MENSAJE");
+    cout << --f << endl;
 }
+  
