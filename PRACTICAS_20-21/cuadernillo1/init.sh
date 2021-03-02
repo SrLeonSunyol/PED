@@ -1,1 +1,1 @@
-mkdir -r Salida/tclanedario
+mkdir Salida/tclanedario
