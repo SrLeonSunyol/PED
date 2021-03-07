@@ -12,12 +12,12 @@ CUADERNILLO 1 SEGUIMIENTO
 [X] Operador ++ (preincremento)
 [X] Operador -- (postDecremento)
 [X] Operador -- (preIncremento)
-[] Metodo Modifica fecha
-[] Modifica mensaje
+[x] Metodo Modifica fecha
+[x] Modifica mensaje
 [X] Operador ==
-[] Operador !=
-[] Operador >
-[] Operador <
+[x] Operador !=
+[x] Operador >
+[x] Operador <
 
 [X] EsVacio
 [X] Dia
@@ -25,4 +25,4 @@ CUADERNILLO 1 SEGUIMIENTO
 [X] Anyo
 [X] Mensaje
 
-[] Operador ostream <<
+[x] Operador ostream <<
