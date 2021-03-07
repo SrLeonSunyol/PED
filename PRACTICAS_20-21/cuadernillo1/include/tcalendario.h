@@ -15,6 +15,7 @@ private:
   int dia, mes, anyo;
   char *mensaje;
 
+  void SetFechaDefecto();
   void CopiaParametros(int, int, int);
   void CopiaMensaje(const char *);
   void SumaDia();
@@ -40,14 +41,14 @@ public:
   TCalendario &operator--();
   TCalendario operator--(int);
 
-  bool operator==(const TCalendario &) const;
-  bool operator!=(const TCalendario &) const;
+  bool operator==(TCalendario &) const;
+  bool operator!=(TCalendario &) const;
 
   bool ModFecha(int, int, int);
   bool ModMensaje(const char *);
 
-  bool operator>(const TCalendario &);
-  bool operator<(const TCalendario &);
+  bool operator>(TCalendario &) const;
+  bool operator<(TCalendario &) const;
 
   bool EsVacio() const;
   int Dia() { return this->dia; };
@@ -55,6 +56,11 @@ public:
   int Anyo() { return this->anyo; };
   char *Mensaje() { return this->mensaje; };
   bool const EsFechaCorrecta(int dia, int mes, int anyo);
+  bool SetFecha(int dia, int mes, int anyo);
+  bool MensajesIguales(char *) const;
+  bool FechaIguales(int, int, int) const;
+  bool EsPosterior(int dia, int mes, int anyo) const;
+  bool MensajeMayor(char *) const;
 };
 
 #endif

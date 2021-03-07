@@ -4,10 +4,7 @@
 
 TCalendario::TCalendario()
 {
-  dia = 1;
-  mes = 1;
-  anyo = 1900;
-  mensaje = NULL;
+  SetFechaDefecto();
 }
 
 TCalendario::TCalendario(int dia, int mes, int anyo, const char *mens)
@@ -70,6 +67,8 @@ TCalendario TCalendario::operator-(const int dia)
 {
   TCalendario t(*this);
   t.RestaDia();
+  if (!EsFechaCorrecta(dia, mes, anyo))
+    SetFechaDefecto();
   return t;
 }
 
@@ -92,6 +91,8 @@ TCalendario TCalendario::operator--(int dia)
 {
   TCalendario t(*this);
   *this = *this - 1;
+  if (!EsFechaCorrecta(dia, mes, anyo))
+    SetFechaDefecto();
   return t;
 }
 
@@ -99,6 +100,65 @@ TCalendario &TCalendario::operator--()
 {
   *this = *this - 1;
   return (*this);
+}
+
+#pragma endregion
+
+#pragma region Metodos
+
+bool TCalendario::EsVacio() const
+{
+  return (dia == 1 && mes == 1 && anyo == 1)
+             ? (mensaje == NULL)
+                   ? true
+                   : false
+             : false;
+}
+
+bool TCalendario::ModFecha(int dia, int mes, int anyo)
+{
+  return (EsFechaCorrecta(dia, mes, anyo))
+             ? SetFecha(dia, mes, anyo)
+             : false;
+}
+
+bool TCalendario::ModMensaje(const char *mensaje)
+{
+  if (mensaje != NULL)
+  {
+    CopiaMensaje(mensaje);
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+bool TCalendario::operator==(TCalendario &c) const
+{
+  return (FechaIguales(c.dia, c.mes, c.anyo))
+             ? MensajesIguales(c.mensaje)
+             : false;
+}
+
+bool TCalendario::operator!=(TCalendario &c) const
+{
+  return !((*this) == c);
+}
+
+bool TCalendario::operator>(TCalendario &c) const
+{
+  return (EsPosterior(c.dia, c.mes, c.anyo)) //criterio 1
+             ? true
+             : (FechaIguales(c.dia, c.mes, c.anyo)) //criterio 2
+                   ? (MensajeMayor(c.mensaje))
+                   : false;
+}
+
+bool TCalendario::operator<(TCalendario &c) const
+{
+  return !((*this) > c);
 }
 
 ostream &operator<<(ostream &os, const TCalendario &c)
@@ -120,10 +180,12 @@ ostream &operator<<(ostream &os, const TCalendario &c)
 
   return os;
 }
+
 #pragma endregion
 
 #pragma region Auxiliares
 
+//Suma un dia a la fecha actual
 void TCalendario::SumaDia()
 {
   if (mes == 2)
@@ -192,6 +254,7 @@ void TCalendario::SumaDia()
   }
 }
 
+//Resta un dia a la fecha actual
 void TCalendario::RestaDia()
 {
   if (mes == 3)
@@ -268,21 +331,31 @@ void TCalendario::RestaDia()
   }
 }
 
-bool TCalendario::EsVacio() const
-{
-  return (dia == 1 && mes == 1 && anyo == 1)
-             ? (mensaje == NULL)
-                   ? true
-                   : false
-             : false;
-}
-
 void TCalendario::CopiaParametros(int dia, int mes, int anyo)
 {
   this->dia = dia;
   this->mes = mes;
   this->anyo = anyo;
   this->mensaje = NULL;
+}
+
+//Compara dos mensajes distintos de NULL
+//Puede ser cadena vacia
+bool TCalendario::MensajesIguales(char *mensaje) const
+{
+  if (this->mensaje == NULL && mensaje == NULL)
+    return true;
+  else if (this->mensaje != NULL && mensaje != NULL)
+  {
+    for (int i = 0; i < strlen(this->mensaje); i++)
+    {
+      if (this->mensaje[i] != mensaje[i])
+        return false;
+    }
+    return true;
+  }
+  else
+    return false;
 }
 
 void TCalendario::CopiaMensaje(const char *mensaje)
@@ -334,6 +407,63 @@ bool const TCalendario::EsFechaCorrecta(int dia, int mes, int anyo)
                          : false
                    : false
              : false;
+}
+
+void TCalendario::SetFechaDefecto()
+{
+  dia = 1;
+  mes = 1;
+  anyo = 1900;
+  mensaje = NULL;
+}
+
+bool TCalendario::SetFecha(int dia, int mes, int anyo)
+{
+  this->dia = dia;
+  this->mes = mes;
+  this->anyo = anyo;
+  return true;
+}
+
+bool TCalendario::FechaIguales(int dia, int mes, int anyo) const
+{
+  return (this->dia == dia)
+             ? (this->mes == mes)
+                   ? (this->anyo == anyo)
+                   : false
+             : false;
+}
+
+bool TCalendario::EsPosterior(int dia, int mes, int anyo) const
+{
+  return (this->anyo > anyo)
+             ? true
+         : (this->anyo == anyo)
+             ? (this->mes > mes)
+                   ? true
+               : (this->mes == mes)
+                   ? (this->dia > dia)
+                         ? true
+                         : false
+                   : false
+             : false;
+}
+
+bool TCalendario::MensajeMayor(char *mensaje) const
+{
+  if (this->mensaje == NULL && mensaje == NULL)
+    return false;
+  else if (this->mensaje != NULL && mensaje != NULL)
+  {
+    int res = strcmp(this->mensaje, mensaje);
+    if (res > 0)
+      return true;
+    else
+      return false;
+  }
+  else
+    return (this->mensaje != NULL);
+  return false;
 }
 
 #pragma endregion

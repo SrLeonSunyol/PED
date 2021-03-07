@@ -1,0 +1,28 @@
+CUADERNILLO 1 SEGUIMIENTO
+
+[X] Constructor por defecto
+[X] Constructor 
+[X] Constructor de copia
+[X] Destructor
+[X] Sobrecarga de operador =
+
+[X] Operador +
+[X] Operador -
+[X] Operador ++ (postIncremento)
+[X] Operador ++ (preincremento)
+[X] Operador -- (postDecremento)
+[X] Operador -- (preIncremento)
+[] Metodo Modifica fecha
+[] Modifica mensaje
+[X] Operador ==
+[] Operador !=
+[] Operador >
+[] Operador <
+
+[X] EsVacio
+[X] Dia
+[X] Mes
+[X] Anyo
+[X] Mensaje
+
+[] Operador ostream <<
