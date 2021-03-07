@@ -29,9 +29,9 @@ TCalendario::TCalendario(const TCalendario &c)
 
 TCalendario::~TCalendario()
 {
-  dia = 0;
-  mes = 0;
-  anyo = 0;
+  dia = 1;
+  mes = 1;
+  anyo = 1900;
   if (mensaje != NULL)
   {
     delete[] mensaje;
@@ -67,8 +67,8 @@ TCalendario TCalendario::operator-(const int dia)
 {
   TCalendario t(*this);
   t.RestaDia();
-  if (!EsFechaCorrecta(dia, mes, anyo))
-    SetFechaDefecto();
+  if (!EsFechaCorrecta(t.dia, t.mes, t.anyo))
+    t.SetFechaDefecto();
   return t;
 }
 
@@ -91,8 +91,6 @@ TCalendario TCalendario::operator--(int dia)
 {
   TCalendario t(*this);
   *this = *this - 1;
-  if (!EsFechaCorrecta(dia, mes, anyo))
-    SetFechaDefecto();
   return t;
 }
 
@@ -349,7 +347,7 @@ bool TCalendario::MensajesIguales(char *mensaje) const
   {
     for (int i = 0; i < strlen(this->mensaje); i++)
     {
-      if (this->mensaje[i] != mensaje[i])
+      if (this->mensaje[i] != toupper(mensaje[i]))
         return false;
     }
     return true;

@@ -15,6 +15,12 @@ private:
   int dia, mes, anyo;
   char *mensaje;
 
+  bool const EsFechaCorrecta(int dia, int mes, int anyo);
+  bool SetFecha(int dia, int mes, int anyo);
+  bool MensajesIguales(char *) const;
+  bool FechaIguales(int, int, int) const;
+  bool EsPosterior(int dia, int mes, int anyo) const;
+  bool MensajeMayor(char *) const;
   void SetFechaDefecto();
   void CopiaParametros(int, int, int);
   void CopiaMensaje(const char *);
@@ -55,12 +61,6 @@ public:
   int Mes() { return this->mes; };
   int Anyo() { return this->anyo; };
   char *Mensaje() { return this->mensaje; };
-  bool const EsFechaCorrecta(int dia, int mes, int anyo);
-  bool SetFecha(int dia, int mes, int anyo);
-  bool MensajesIguales(char *) const;
-  bool FechaIguales(int, int, int) const;
-  bool EsPosterior(int dia, int mes, int anyo) const;
-  bool MensajeMayor(char *) const;
 };
 
 #endif

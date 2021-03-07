@@ -13,7 +13,7 @@ do
     echo "=========================================="
 
     echo "==========VALGRIND TAD=============="
-    valgrind --track-origins=yes Salida/tcalendario/./tad0$i
+    valgrind --track-origins=yes --leak-check=full Salida/tcalendario/./tad0$i 
     echo "==========DIFF=============="
     diff src/tcalendario/tad0$i.cpp.sal Salida/tcalendario/./tad0$i
 done
